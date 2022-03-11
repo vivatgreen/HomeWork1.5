@@ -47,7 +47,7 @@ public class Main {
                 System.out.println("извините, доставка только в пределах МКАДа");
 
             // Задача 5
-            int monthNumber = 7;
+            int monthNumber = 13;
             switch (monthNumber) {
                 case 1:
                 case 2:
