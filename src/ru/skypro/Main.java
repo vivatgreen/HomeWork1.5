@@ -43,12 +43,11 @@ public class Main {
             } else if (deliveryDistance >= 60 && deliveryDistance <= 100) {
                 addedDeliveryTime += 3;
                 System.out.println("Потребуется дней:" + addedDeliveryTime);
-                ;
             } else
                 System.out.println("извините, доставка только в пределах МКАДа");
 
             // Задача 5
-            int monthNumber = 13;
+            int monthNumber = 7;
             switch (monthNumber) {
                 case 1:
                 case 2:
