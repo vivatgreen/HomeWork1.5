@@ -11,18 +11,18 @@ public class Main {
             System.out.println("Установите версию приложения для iOS по ссылке");
         }
         // Задача 2
-        int clientDeviceYear = 2014;
-        int deviceOS = 1;
+        int clientDeviceYear = 2016;
+        int deviceOS = 0;
         if (clientDeviceYear < 2015 && deviceOS == 1) {
+            System.out.println("Установите обычную версию приложения для iOS по ссылке");
+        } if (clientDeviceYear >= 2015 && deviceOS == 1) {
             System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            if (clientDeviceYear >= 2015 && deviceOS == 1) {
-                System.out.println("Установите облегченную версию приложения для iOS по ссылке");
-            } else if (clientDeviceYear < 2015 && deviceOS == 0) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            } else if (clientDeviceYear >= 2015 && deviceOS == 0) {
-                System.out.println("Установите облегченную версию приложения для Android по ссылке");
-            }
-            }
+        } else if (clientDeviceYear < 2015 && deviceOS == 0) {
+            System.out.println("Установите обычную версию приложения для Android по ссылке");
+        } else if (clientDeviceYear >= 2015 && deviceOS == 0) {
+            System.out.println("Установите облегченную версию приложения для Android по ссылке");
+        }
+
             // Задача 3
             int year = 2020;
             boolean isLeapYear = ((year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0));
@@ -47,7 +47,7 @@ public class Main {
                 System.out.println("извините, доставка только в пределах МКАДа");
 
             // Задача 5
-            int monthNumber = 7;
+            int monthNumber = 13;
             switch (monthNumber) {
                 case 1:
                 case 2:
